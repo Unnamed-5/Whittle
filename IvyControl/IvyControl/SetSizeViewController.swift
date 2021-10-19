@@ -54,8 +54,8 @@ class SetSizeViewController: UIViewController {
             let context = appDelegate.persistentContainer.viewContext
             let newDrawing = Drawing(context: context)
             newDrawing.title = "Untitled"
-            newDrawing.width = Int64(widthTextField.text!)! * 5
-            newDrawing.height = Int64(heightTextField.text!)! * 5
+            newDrawing.width = Int64(widthTextField.text!)!
+            newDrawing.height = Int64(heightTextField.text!)!
             newDrawing.data = PKDrawing().dataRepresentation()
             canvasVC.drawing = newDrawing
             appDelegate.saveContext()

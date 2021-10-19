@@ -27,13 +27,16 @@ class CanvasViewController: UIViewController, PKToolPickerObserver, PKCanvasView
     @IBOutlet var redoButton: UIBarButtonItem!
     @IBOutlet var exportButton: UIBarButtonItem!
     
-    
+    var pixelSize: CGSize!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         navigationItem.title = drawing.title
-        canvasView.contentSize = drawing.size
+        
+        pixelSize = drawing.size * canvasZoomScale
+        
+        canvasView.contentSize = pixelSize
         canvasView.drawingPolicy = .default
         canvasView.minimumZoomScale = 0.1
         canvasView.maximumZoomScale = 100000
@@ -43,7 +46,7 @@ class CanvasViewController: UIViewController, PKToolPickerObserver, PKCanvasView
         canvasView.contentOffset = .zero
         
         underlayView.contentMode = .scaleToFill
-        underlayView.frame = CGRect(origin: CGPoint.zero, size: drawing.size)
+        underlayView.frame = CGRect(origin: CGPoint.zero, size: pixelSize)
         underlayView.layer.shadowColor = UIColor.black.cgColor
         underlayView.layer.shadowOpacity = 0.3
         underlayView.layer.shadowRadius = 10
@@ -88,10 +91,10 @@ class CanvasViewController: UIViewController, PKToolPickerObserver, PKCanvasView
         super.viewDidLayoutSubviews()
         
         if drawing.height < drawing.width {
-            let canvasScale = canvasView.bounds.width / CGFloat(drawing.width)
+            let canvasScale = canvasView.bounds.width / pixelSize.width
             canvasView.zoomScale = canvasScale
         } else {
-            let canvasScale = canvasView.bounds.height / CGFloat(drawing.height)
+            let canvasScale = canvasView.bounds.height / pixelSize.height
             canvasView.zoomScale = canvasScale
         }
         
@@ -113,7 +116,7 @@ class CanvasViewController: UIViewController, PKToolPickerObserver, PKCanvasView
         let offsetX: CGFloat = max((canvasView.bounds.size.width - canvasView.contentSize.width) * 0.5, 0.0)
         let offsetY: CGFloat = max((canvasView.bounds.size.height - canvasView.contentSize.height) * 0.5, 0.0)
         
-        underlayView.frame.size = drawing.size * canvasView.zoomScale
+        underlayView.frame.size = pixelSize * canvasView.zoomScale
         
         canvasView.contentInset.left = offsetX
         

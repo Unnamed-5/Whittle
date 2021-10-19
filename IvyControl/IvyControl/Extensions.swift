@@ -10,6 +10,7 @@ import Foundation
 import UIKit
 import CoreImage
 
+let canvasZoomScale = CGFloat(3)
 
 extension CGSize {
     
@@ -19,6 +20,10 @@ extension CGSize {
     
     static func * (lhs: CGSize, rhs: CGFloat) -> CGSize {
         CGSize(width: lhs.width * rhs, height: lhs.height * rhs)
+    }
+    
+    static func / (lhs: CGSize, rhs: CGFloat) -> CGSize {
+        CGSize(width: lhs.width / rhs, height: lhs.height / rhs)
     }
 }
 

@@ -27,11 +27,13 @@ class DrawingCell: UICollectionViewCell {
         drawingImageView.overrideUserInterfaceStyle = .light
         
         drawingTitle.text = drawing?.title
-        drawingSubtitle.text = "\(drawing!.width / 5) × \(drawing!.height / 5)"
+        drawingSubtitle.text = "\(drawing!.width) × \(drawing!.height)"
         
-        let thumbnailRect = CGRect(x: 0, y: 0, width: CGFloat(drawing!.width), height: CGFloat(drawing!.height))
+        let thumbnailRect = CGRect(
+            origin: .zero,
+            size: drawing!.size * canvasZoomScale
+        )
         
-    
         
         thumbnailQueue.async {
             

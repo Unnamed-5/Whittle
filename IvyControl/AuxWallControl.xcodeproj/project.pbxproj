@@ -22,6 +22,7 @@
 		EE69BF0726BB8FB3000AD173 /* SetSizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE69BF0626BB8FB3000AD173 /* SetSizeViewController.swift */; };
 		EE80781A26C616BD00BE1A63 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE80781926C616BD00BE1A63 /* Extensions.swift */; };
 		EED26FAF271D7AFD00A268F7 /* Canvas+Export.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED26FAE271D7AFD00A268F7 /* Canvas+Export.swift */; };
+		EED26FB1271E4FCE00A268F7 /* Canvas+Bluetooth.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED26FB0271E4FCE00A268F7 /* Canvas+Bluetooth.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		EE71701626CBE35A007FD05F /* IvyControl.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IvyControl.entitlements; sourceTree = "<group>"; };
 		EE80781926C616BD00BE1A63 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		EED26FAE271D7AFD00A268F7 /* Canvas+Export.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Canvas+Export.swift"; sourceTree = "<group>"; };
+		EED26FB0271E4FCE00A268F7 /* Canvas+Bluetooth.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Canvas+Bluetooth.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,6 +145,7 @@
 				EE22325826B9282F00A7E914 /* Main.storyboard */,
 				EE69BF0426BB88C9000AD173 /* CanvaViewController.swift */,
 				EED26FAE271D7AFD00A268F7 /* Canvas+Export.swift */,
+				EED26FB0271E4FCE00A268F7 /* Canvas+Bluetooth.swift */,
 				EE69BF0626BB8FB3000AD173 /* SetSizeViewController.swift */,
 				EE69BF0226BA64EC000AD173 /* DrawingCell.swift */,
 				EE80781926C616BD00BE1A63 /* Extensions.swift */,
@@ -308,6 +311,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EED26FB1271E4FCE00A268F7 /* Canvas+Bluetooth.swift in Sources */,
 				EE22325D26B9282F00A7E914 /* IvyControl.xcdatamodeld in Sources */,
 				EE22325726B9282F00A7E914 /* DrawingsViewController.swift in Sources */,
 				EE22325326B9282F00A7E914 /* AppDelegate.swift in Sources */,

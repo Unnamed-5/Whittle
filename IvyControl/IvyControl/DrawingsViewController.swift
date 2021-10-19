@@ -18,6 +18,8 @@ class DrawingsViewController: UICollectionViewController, UICollectionViewDelega
 
     private var itemsPerRow: CGFloat = 2
     
+    var renamingDrawing: Drawing!
+    
     var drawings = [Drawing]()
     
     override func viewDidLoad() {
@@ -113,6 +115,8 @@ class DrawingsViewController: UICollectionViewController, UICollectionViewDelega
             let renameAction = UIAction(title: "Rename", image: UIImage(systemName: "pencil"), handler: {
                 _ in
                 
+                self.renamingDrawing = self.drawings[indexPath.item]
+                
                 let renameAlert = UIAlertController(title: "Rename", message: nil, preferredStyle: .alert)
                 
                 renameAlert.addTextField(configurationHandler: { [self] in
@@ -199,7 +203,9 @@ class DrawingsViewController: UICollectionViewController, UICollectionViewDelega
 //        print("rename textField content changed")
         let renameAlert = presentedViewController as! UIAlertController
         let textField = renameAlert.textFields!.first!
-        renameAlert.actions[1].isEnabled = textField.text != ""
+        if textField.text != "" || textField.text != renamingDrawing.title {
+            renameAlert.actions[1].isEnabled = false
+        }
     }
     
     @objc func renameTextFieldBeginEditing() {

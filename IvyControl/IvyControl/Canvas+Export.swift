@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import CoreBluetooth
 
 extension CanvasViewController: UIDocumentInteractionControllerDelegate {
     
@@ -147,17 +146,17 @@ extension CanvasViewController: UIDocumentInteractionControllerDelegate {
         
         fileURL = fileManager.temporaryDirectory.appendingPathComponent(fileName)
         
-        let rect = CGRect(x: 0, y: 0, width: CGFloat(drawing!.width), height: CGFloat(drawing!.height))
+        let rect = CGRect(
+            origin: .zero,
+            size: pixelSize
+        )
         var image: UIImage!
         canvasView.traitCollection.performAsCurrent {
             image = canvasView.drawing.image(from: rect, scale: 1)
         }
         
         image = image.resized(
-            to: CGSize(
-                width: image.size.width / 5,
-                height: image.size.height / 5
-            )
+            to: image.size / canvasZoomScale
         )
         
         image = image.maskedWithColor(color: .white)
