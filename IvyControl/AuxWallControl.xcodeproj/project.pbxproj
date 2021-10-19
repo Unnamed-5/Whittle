@@ -1,0 +1,677 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EE12F6A626D24F1800D8DB50 /* UIImage+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = EE12F6A426D24F1800D8DB50 /* UIImage+Extension.m */; };
+		EE22325326B9282F00A7E914 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22325226B9282F00A7E914 /* AppDelegate.swift */; };
+		EE22325526B9282F00A7E914 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22325426B9282F00A7E914 /* SceneDelegate.swift */; };
+		EE22325726B9282F00A7E914 /* DrawingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22325626B9282F00A7E914 /* DrawingsViewController.swift */; };
+		EE22325A26B9282F00A7E914 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE22325826B9282F00A7E914 /* Main.storyboard */; };
+		EE22325D26B9282F00A7E914 /* IvyControl.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE22325B26B9282F00A7E914 /* IvyControl.xcdatamodeld */; };
+		EE22325F26B9283000A7E914 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE22325E26B9283000A7E914 /* Assets.xcassets */; };
+		EE22326226B9283000A7E914 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE22326026B9283000A7E914 /* LaunchScreen.storyboard */; };
+		EE22326D26B9283000A7E914 /* IvyControlTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22326C26B9283000A7E914 /* IvyControlTests.swift */; };
+		EE22327826B9283000A7E914 /* IvyControlUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE22327726B9283000A7E914 /* IvyControlUITests.swift */; };
+		EE69BF0326BA64EC000AD173 /* DrawingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE69BF0226BA64EC000AD173 /* DrawingCell.swift */; };
+		EE69BF0526BB88C9000AD173 /* CanvaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE69BF0426BB88C9000AD173 /* CanvaViewController.swift */; };
+		EE69BF0726BB8FB3000AD173 /* SetSizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE69BF0626BB8FB3000AD173 /* SetSizeViewController.swift */; };
+		EE80781A26C616BD00BE1A63 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE80781926C616BD00BE1A63 /* Extensions.swift */; };
+		EED26FAF271D7AFD00A268F7 /* Canvas+Export.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED26FAE271D7AFD00A268F7 /* Canvas+Export.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EE22326926B9283000A7E914 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE22324726B9282F00A7E914 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE22324E26B9282F00A7E914;
+			remoteInfo = IvyControl;
+		};
+		EE22327426B9283000A7E914 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE22324726B9282F00A7E914 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE22324E26B9282F00A7E914;
+			remoteInfo = IvyControl;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		EE1DCE5626D0A1E2006B1C0A /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		EE12F6A326D24F1700D8DB50 /* IvyControl-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "IvyControl-Bridging-Header.h"; sourceTree = "<group>"; };
+		EE12F6A426D24F1800D8DB50 /* UIImage+Extension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Extension.m"; sourceTree = "<group>"; };
+		EE12F6A526D24F1800D8DB50 /* UIImage+Extension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+Extension.h"; sourceTree = "<group>"; };
+		EE22324F26B9282F00A7E914 /* IvyControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IvyControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE22325226B9282F00A7E914 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EE22325426B9282F00A7E914 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EE22325626B9282F00A7E914 /* DrawingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingsViewController.swift; sourceTree = "<group>"; };
+		EE22325926B9282F00A7E914 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE22325C26B9282F00A7E914 /* IvyControl.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = IvyControl.xcdatamodel; sourceTree = "<group>"; };
+		EE22325E26B9283000A7E914 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE22326126B9283000A7E914 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EE22326326B9283000A7E914 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE22326826B9283000A7E914 /* IvyControlTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IvyControlTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE22326C26B9283000A7E914 /* IvyControlTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IvyControlTests.swift; sourceTree = "<group>"; };
+		EE22326E26B9283000A7E914 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE22327326B9283000A7E914 /* IvyControlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IvyControlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE22327726B9283000A7E914 /* IvyControlUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IvyControlUITests.swift; sourceTree = "<group>"; };
+		EE22327926B9283000A7E914 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE69BF0226BA64EC000AD173 /* DrawingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingCell.swift; sourceTree = "<group>"; };
+		EE69BF0426BB88C9000AD173 /* CanvaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvaViewController.swift; sourceTree = "<group>"; };
+		EE69BF0626BB8FB3000AD173 /* SetSizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetSizeViewController.swift; sourceTree = "<group>"; };
+		EE71701626CBE35A007FD05F /* IvyControl.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IvyControl.entitlements; sourceTree = "<group>"; };
+		EE80781926C616BD00BE1A63 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		EED26FAE271D7AFD00A268F7 /* Canvas+Export.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Canvas+Export.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE22324C26B9282F00A7E914 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE22326526B9283000A7E914 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE22327026B9283000A7E914 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EE1DCE5226D0A149006B1C0A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE22324626B9282F00A7E914 = {
+			isa = PBXGroup;
+			children = (
+				EE22325126B9282F00A7E914 /* IvyControl */,
+				EE22326B26B9283000A7E914 /* IvyControlTests */,
+				EE22327626B9283000A7E914 /* IvyControlUITests */,
+				EE22325026B9282F00A7E914 /* Products */,
+				EE1DCE5226D0A149006B1C0A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EE22325026B9282F00A7E914 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE22324F26B9282F00A7E914 /* IvyControl.app */,
+				EE22326826B9283000A7E914 /* IvyControlTests.xctest */,
+				EE22327326B9283000A7E914 /* IvyControlUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE22325126B9282F00A7E914 /* IvyControl */ = {
+			isa = PBXGroup;
+			children = (
+				EE71701626CBE35A007FD05F /* IvyControl.entitlements */,
+				EE22325226B9282F00A7E914 /* AppDelegate.swift */,
+				EE22325426B9282F00A7E914 /* SceneDelegate.swift */,
+				EE22325626B9282F00A7E914 /* DrawingsViewController.swift */,
+				EE22325826B9282F00A7E914 /* Main.storyboard */,
+				EE69BF0426BB88C9000AD173 /* CanvaViewController.swift */,
+				EED26FAE271D7AFD00A268F7 /* Canvas+Export.swift */,
+				EE69BF0626BB8FB3000AD173 /* SetSizeViewController.swift */,
+				EE69BF0226BA64EC000AD173 /* DrawingCell.swift */,
+				EE80781926C616BD00BE1A63 /* Extensions.swift */,
+				EE22325E26B9283000A7E914 /* Assets.xcassets */,
+				EE22326026B9283000A7E914 /* LaunchScreen.storyboard */,
+				EE22326326B9283000A7E914 /* Info.plist */,
+				EE22325B26B9282F00A7E914 /* IvyControl.xcdatamodeld */,
+				EE12F6A526D24F1800D8DB50 /* UIImage+Extension.h */,
+				EE12F6A426D24F1800D8DB50 /* UIImage+Extension.m */,
+				EE12F6A326D24F1700D8DB50 /* IvyControl-Bridging-Header.h */,
+			);
+			path = IvyControl;
+			sourceTree = "<group>";
+		};
+		EE22326B26B9283000A7E914 /* IvyControlTests */ = {
+			isa = PBXGroup;
+			children = (
+				EE22326C26B9283000A7E914 /* IvyControlTests.swift */,
+				EE22326E26B9283000A7E914 /* Info.plist */,
+			);
+			path = IvyControlTests;
+			sourceTree = "<group>";
+		};
+		EE22327626B9283000A7E914 /* IvyControlUITests */ = {
+			isa = PBXGroup;
+			children = (
+				EE22327726B9283000A7E914 /* IvyControlUITests.swift */,
+				EE22327926B9283000A7E914 /* Info.plist */,
+			);
+			path = IvyControlUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE22324E26B9282F00A7E914 /* IvyControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE22327C26B9283000A7E914 /* Build configuration list for PBXNativeTarget "IvyControl" */;
+			buildPhases = (
+				EE22324B26B9282F00A7E914 /* Sources */,
+				EE22324C26B9282F00A7E914 /* Frameworks */,
+				EE22324D26B9282F00A7E914 /* Resources */,
+				EE1DCE5626D0A1E2006B1C0A /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = IvyControl;
+			productName = IvyControl;
+			productReference = EE22324F26B9282F00A7E914 /* IvyControl.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EE22326726B9283000A7E914 /* IvyControlTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE22327F26B9283000A7E914 /* Build configuration list for PBXNativeTarget "IvyControlTests" */;
+			buildPhases = (
+				EE22326426B9283000A7E914 /* Sources */,
+				EE22326526B9283000A7E914 /* Frameworks */,
+				EE22326626B9283000A7E914 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE22326A26B9283000A7E914 /* PBXTargetDependency */,
+			);
+			name = IvyControlTests;
+			productName = IvyControlTests;
+			productReference = EE22326826B9283000A7E914 /* IvyControlTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		EE22327226B9283000A7E914 /* IvyControlUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE22328226B9283000A7E914 /* Build configuration list for PBXNativeTarget "IvyControlUITests" */;
+			buildPhases = (
+				EE22326F26B9283000A7E914 /* Sources */,
+				EE22327026B9283000A7E914 /* Frameworks */,
+				EE22327126B9283000A7E914 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE22327526B9283000A7E914 /* PBXTargetDependency */,
+			);
+			name = IvyControlUITests;
+			productName = IvyControlUITests;
+			productReference = EE22327326B9283000A7E914 /* IvyControlUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE22324726B9282F00A7E914 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1250;
+				LastUpgradeCheck = 1250;
+				ORGANIZATIONNAME = "iGEM Whittle";
+				TargetAttributes = {
+					EE22324E26B9282F00A7E914 = {
+						CreatedOnToolsVersion = 12.5.1;
+						LastSwiftMigration = 1250;
+					};
+					EE22326726B9283000A7E914 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = EE22324E26B9282F00A7E914;
+					};
+					EE22327226B9283000A7E914 = {
+						CreatedOnToolsVersion = 12.5.1;
+						TestTargetID = EE22324E26B9282F00A7E914;
+					};
+				};
+			};
+			buildConfigurationList = EE22324A26B9282F00A7E914 /* Build configuration list for PBXProject "AuxWallControl" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE22324626B9282F00A7E914;
+			productRefGroup = EE22325026B9282F00A7E914 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE22324E26B9282F00A7E914 /* IvyControl */,
+				EE22326726B9283000A7E914 /* IvyControlTests */,
+				EE22327226B9283000A7E914 /* IvyControlUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE22324D26B9282F00A7E914 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE22326226B9283000A7E914 /* LaunchScreen.storyboard in Resources */,
+				EE22325F26B9283000A7E914 /* Assets.xcassets in Resources */,
+				EE22325A26B9282F00A7E914 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE22326626B9283000A7E914 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE22327126B9283000A7E914 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE22324B26B9282F00A7E914 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE22325D26B9282F00A7E914 /* IvyControl.xcdatamodeld in Sources */,
+				EE22325726B9282F00A7E914 /* DrawingsViewController.swift in Sources */,
+				EE22325326B9282F00A7E914 /* AppDelegate.swift in Sources */,
+				EED26FAF271D7AFD00A268F7 /* Canvas+Export.swift in Sources */,
+				EE80781A26C616BD00BE1A63 /* Extensions.swift in Sources */,
+				EE69BF0326BA64EC000AD173 /* DrawingCell.swift in Sources */,
+				EE12F6A626D24F1800D8DB50 /* UIImage+Extension.m in Sources */,
+				EE69BF0526BB88C9000AD173 /* CanvaViewController.swift in Sources */,
+				EE22325526B9282F00A7E914 /* SceneDelegate.swift in Sources */,
+				EE69BF0726BB8FB3000AD173 /* SetSizeViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE22326426B9283000A7E914 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE22326D26B9283000A7E914 /* IvyControlTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE22326F26B9283000A7E914 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE22327826B9283000A7E914 /* IvyControlUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE22326A26B9283000A7E914 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE22324E26B9282F00A7E914 /* IvyControl */;
+			targetProxy = EE22326926B9283000A7E914 /* PBXContainerItemProxy */;
+		};
+		EE22327526B9283000A7E914 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE22324E26B9282F00A7E914 /* IvyControl */;
+			targetProxy = EE22327426B9283000A7E914 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EE22325826B9282F00A7E914 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE22325926B9282F00A7E914 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EE22326026B9283000A7E914 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE22326126B9283000A7E914 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE22327A26B9283000A7E914 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EE22327B26B9283000A7E914 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE22327D26B9283000A7E914 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = IvyControl/IvyControl.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ST59K86WU8;
+				INFOPLIST_FILE = IvyControl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.WhittleiGEM.AuxWallControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "IvyControl/IvyControl-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EE22327E26B9283000A7E914 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = IvyControl/IvyControl.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ST59K86WU8;
+				INFOPLIST_FILE = IvyControl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.WhittleiGEM.AuxWallControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "IvyControl/IvyControl-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EE22328026B9283000A7E914 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ST59K86WU8;
+				INFOPLIST_FILE = IvyControlTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.WhittleiGEM.IvyControlTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IvyControl.app/IvyControl";
+			};
+			name = Debug;
+		};
+		EE22328126B9283000A7E914 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ST59K86WU8;
+				INFOPLIST_FILE = IvyControlTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.WhittleiGEM.IvyControlTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/IvyControl.app/IvyControl";
+			};
+			name = Release;
+		};
+		EE22328326B9283000A7E914 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ST59K86WU8;
+				INFOPLIST_FILE = IvyControlUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.WhittleiGEM.IvyControlUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IvyControl;
+			};
+			name = Debug;
+		};
+		EE22328426B9283000A7E914 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = ST59K86WU8;
+				INFOPLIST_FILE = IvyControlUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.WhittleiGEM.IvyControlUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = IvyControl;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE22324A26B9282F00A7E914 /* Build configuration list for PBXProject "AuxWallControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE22327A26B9283000A7E914 /* Debug */,
+				EE22327B26B9283000A7E914 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE22327C26B9283000A7E914 /* Build configuration list for PBXNativeTarget "IvyControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE22327D26B9283000A7E914 /* Debug */,
+				EE22327E26B9283000A7E914 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE22327F26B9283000A7E914 /* Build configuration list for PBXNativeTarget "IvyControlTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE22328026B9283000A7E914 /* Debug */,
+				EE22328126B9283000A7E914 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE22328226B9283000A7E914 /* Build configuration list for PBXNativeTarget "IvyControlUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE22328326B9283000A7E914 /* Debug */,
+				EE22328426B9283000A7E914 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EE22325B26B9282F00A7E914 /* IvyControl.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EE22325C26B9282F00A7E914 /* IvyControl.xcdatamodel */,
+			);
+			currentVersion = EE22325C26B9282F00A7E914 /* IvyControl.xcdatamodel */;
+			path = IvyControl.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EE22324726B9282F00A7E914 /* Project object */;
+}
