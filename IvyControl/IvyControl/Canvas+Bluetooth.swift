@@ -43,7 +43,7 @@ extension CanvasViewController: CBCentralManagerDelegate, CBPeripheralDelegate {
         print("Peripheral name: " + peripheral.name!)
         print ("Advertisement Data : \(advertisementData)")
         
-        centralManager?.connect(auxWallPeripheral, options: nil)
+        
         presentedViewController!.dismiss(animated: true, completion: { [self] in
             let connectingAlert = UIAlertController(title: "AuxWall Discovered!", message: "Connecting...", preferredStyle: .alert)
             connectingAlert.view.tintColor = .systemGreen
@@ -52,7 +52,9 @@ extension CanvasViewController: CBCentralManagerDelegate, CBPeripheralDelegate {
                 exportButton.customView = nil
             })
             connectingAlert.addAction(cancelAction)
-            present(connectingAlert, animated: true)
+            present(connectingAlert, animated: true, completion: {
+                centralManager?.connect(auxWallPeripheral, options: nil)
+            })
             
         })
         
@@ -128,14 +130,16 @@ extension CanvasViewController: CBCentralManagerDelegate, CBPeripheralDelegate {
     // MARK: Did write value
     
     func peripheral(_ peripheral: CBPeripheral, didWriteValueFor characteristic: CBCharacteristic, error: Error?) {
+        
+        exportButton.customView = nil
+        
         if error == nil {
             print("did write value")
             centralManager.cancelPeripheralConnection(auxWallPeripheral)
-            exportButton.customView = nil
             presentCompleteAlert()
         } else {
             print(error!)
-            presentErrorAlert()
+            presentErrorAlert()()
         }
     }
     
