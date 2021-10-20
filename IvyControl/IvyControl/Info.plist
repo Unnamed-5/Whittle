@@ -26,6 +26,8 @@
 	<string>This allows us to export the drawing for you.</string>
 	<key>NSBluetoothPeripheralUsageDescription</key>
 	<string>This allows the app to send data to your AuxWall.</string>
+	<key>NSBluetoothAlwaysUsageDescription</key>
+	<string>This allows the app to send data to your AuxWall.</string>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

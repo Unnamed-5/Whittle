@@ -20,6 +20,7 @@
 		EE69BF0326BA64EC000AD173 /* DrawingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE69BF0226BA64EC000AD173 /* DrawingCell.swift */; };
 		EE69BF0526BB88C9000AD173 /* CanvaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE69BF0426BB88C9000AD173 /* CanvaViewController.swift */; };
 		EE69BF0726BB8FB3000AD173 /* SetSizeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE69BF0626BB8FB3000AD173 /* SetSizeViewController.swift */; };
+		EE6A7380271F9C0B00BFC9D5 /* CBUUIDs.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE6A737F271F9C0B00BFC9D5 /* CBUUIDs.swift */; };
 		EE80781A26C616BD00BE1A63 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE80781926C616BD00BE1A63 /* Extensions.swift */; };
 		EED26FAF271D7AFD00A268F7 /* Canvas+Export.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED26FAE271D7AFD00A268F7 /* Canvas+Export.swift */; };
 		EED26FB1271E4FCE00A268F7 /* Canvas+Bluetooth.swift in Sources */ = {isa = PBXBuildFile; fileRef = EED26FB0271E4FCE00A268F7 /* Canvas+Bluetooth.swift */; };
@@ -76,6 +77,7 @@
 		EE69BF0226BA64EC000AD173 /* DrawingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingCell.swift; sourceTree = "<group>"; };
 		EE69BF0426BB88C9000AD173 /* CanvaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvaViewController.swift; sourceTree = "<group>"; };
 		EE69BF0626BB8FB3000AD173 /* SetSizeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetSizeViewController.swift; sourceTree = "<group>"; };
+		EE6A737F271F9C0B00BFC9D5 /* CBUUIDs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CBUUIDs.swift; sourceTree = "<group>"; };
 		EE71701626CBE35A007FD05F /* IvyControl.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = IvyControl.entitlements; sourceTree = "<group>"; };
 		EE80781926C616BD00BE1A63 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		EED26FAE271D7AFD00A268F7 /* Canvas+Export.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Canvas+Export.swift"; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				EE69BF0426BB88C9000AD173 /* CanvaViewController.swift */,
 				EED26FAE271D7AFD00A268F7 /* Canvas+Export.swift */,
 				EED26FB0271E4FCE00A268F7 /* Canvas+Bluetooth.swift */,
+				EE6A737F271F9C0B00BFC9D5 /* CBUUIDs.swift */,
 				EE69BF0626BB8FB3000AD173 /* SetSizeViewController.swift */,
 				EE69BF0226BA64EC000AD173 /* DrawingCell.swift */,
 				EE80781926C616BD00BE1A63 /* Extensions.swift */,
@@ -322,6 +325,7 @@
 				EE69BF0526BB88C9000AD173 /* CanvaViewController.swift in Sources */,
 				EE22325526B9282F00A7E914 /* SceneDelegate.swift in Sources */,
 				EE69BF0726BB8FB3000AD173 /* SetSizeViewController.swift in Sources */,
+				EE6A7380271F9C0B00BFC9D5 /* CBUUIDs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

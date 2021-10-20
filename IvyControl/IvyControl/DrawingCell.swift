@@ -42,6 +42,12 @@ class DrawingCell: UICollectionViewCell {
                     do {
                         var image = try PKDrawing(data: drawing!.data!).image(from: thumbnailRect, scale: 1)
                         
+                        print(image.size)
+                        
+                        image = image.resized(to: drawing!.size / UITraitCollection.current.displayScale)
+                        
+                        print(image.size)
+                        
                         let aspectRatio = image.size.width / image.size.height
                         
                         let imageViewSize = drawingImageView.frame.size
@@ -58,6 +64,7 @@ class DrawingCell: UICollectionViewCell {
                         }
                         
                         image = image.resized(to: sizeToResize)
+                        
                         image = image.maskedWithColor(color: .white)
                         
                         DispatchQueue.main.async { [self] in

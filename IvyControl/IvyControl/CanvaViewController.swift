@@ -8,11 +8,20 @@
 
 import UIKit
 import PencilKit
+import CoreBluetooth
 
 class CanvasViewController: UIViewController, PKToolPickerObserver, PKCanvasViewDelegate {
     
     @IBOutlet var canvasView: PKCanvasView!
     @IBOutlet var underlayView: UIView!
+    
+    var bluetoothCharacteristic: CBCharacteristic!
+    
+    var centralManager: CBCentralManager!
+    
+    var auxWallPeripheral: CBPeripheral!
+    
+    var dataToSend: Data!
     
     var drawing: Drawing!
     
@@ -54,7 +63,7 @@ class CanvasViewController: UIViewController, PKToolPickerObserver, PKCanvasView
         
         setupExportMenu()
         
-        
+        centralManager = CBCentralManager(delegate: self, queue: nil)
         
         // Do any additional setup after loading the view.
     }
@@ -123,13 +132,11 @@ class CanvasViewController: UIViewController, PKToolPickerObserver, PKCanvasView
         let obscuredFrame = toolPicker.frameObscured(in: view)
         
         if obscuredFrame.isNull {
-            print("floating tool picker")
+            
             canvasView.horizontalScrollIndicatorInsets.bottom = 0
             canvasView.verticalScrollIndicatorInsets.bottom = 0
             navigationItem.setRightBarButtonItems([exportButton], animated: true)
         } else {
-            
-            print("compact tool picker")
             
             canvasView.horizontalScrollIndicatorInsets.bottom = obscuredFrame.height
             canvasView.verticalScrollIndicatorInsets.bottom = obscuredFrame.height

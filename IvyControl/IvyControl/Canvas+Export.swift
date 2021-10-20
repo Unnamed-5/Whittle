@@ -8,7 +8,7 @@
 
 import UIKit
 
-extension CanvasViewController: UIDocumentInteractionControllerDelegate {
+extension CanvasViewController {
     
     enum BinarizationMethod {
         case fixedThreshold
@@ -181,7 +181,7 @@ extension CanvasViewController: UIDocumentInteractionControllerDelegate {
             
         case .exportFile:
             
-            let coordinates = coordinatesData(forImage: image)
+            let coordinates = coordinatesString(forImage: image)
             
             try! coordinates.write(to: fileURL, atomically: true, encoding: .utf8)
             
@@ -216,35 +216,18 @@ extension CanvasViewController: UIDocumentInteractionControllerDelegate {
             })
             
         case .sendToWall:
-            print("TODO: SEND TO AUXWALL")
+            let coordinatesString = coordinatesString(forImage: image)
+            dataToSend = (coordinatesString as NSString).data(using: String.Encoding.utf8.rawValue)
+            exportForBluetooth()
             // TODO: Send to wall bluetooth part
             
         }
         
     }
     
-    func documentInteractionControllerViewControllerForPreview(_ controller: UIDocumentInteractionController) -> UIViewController {
-        self
-    }
-    
-    func documentInteractionControllerDidEndPreview(_ controller: UIDocumentInteractionController) {
-        toolPicker.setVisible(true, forFirstResponder: canvasView)
-        
-        do {
-            try FileManager.default.removeItem(at: fileURL)
-        } catch {}
-        
-    }
     
     
-    func documentInteractionControllerWillBeginPreview(_ controller: UIDocumentInteractionController) {
-        toolPicker.setVisible(false, forFirstResponder: canvasView)
-        
-        (exportButton.customView as! UIActivityIndicatorView).stopAnimating()
-        exportButton.customView = nil
-    }
-    
-    func coordinatesData(forImage image: UIImage) -> String {
+    func coordinatesString(forImage image: UIImage) -> String {
         
         var pixels = [Int]()
         let colorsArray = image.pixelData()!
@@ -283,11 +266,34 @@ extension CanvasViewController: UIDocumentInteractionControllerDelegate {
                     yCoordinate += 1
                 }
                 
-                coordinates += "\(xCoordinate),\(yCoordinate)\n"
+                coordinates += "\(xCoordinate),\(yCoordinate),"
             }
         }
         coordinates.removeLast(2)
         
         return coordinates
+    }
+}
+
+extension CanvasViewController: UIDocumentInteractionControllerDelegate {
+    func documentInteractionControllerViewControllerForPreview(_ controller: UIDocumentInteractionController) -> UIViewController {
+        self
+    }
+    
+    func documentInteractionControllerDidEndPreview(_ controller: UIDocumentInteractionController) {
+        toolPicker.setVisible(true, forFirstResponder: canvasView)
+        
+        do {
+            try FileManager.default.removeItem(at: fileURL)
+        } catch {}
+        
+    }
+    
+    
+    func documentInteractionControllerWillBeginPreview(_ controller: UIDocumentInteractionController) {
+        toolPicker.setVisible(false, forFirstResponder: canvasView)
+        
+        (exportButton.customView as! UIActivityIndicatorView).stopAnimating()
+        exportButton.customView = nil
     }
 }

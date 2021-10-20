@@ -203,8 +203,10 @@ class DrawingsViewController: UICollectionViewController, UICollectionViewDelega
 //        print("rename textField content changed")
         let renameAlert = presentedViewController as! UIAlertController
         let textField = renameAlert.textFields!.first!
-        if textField.text != "" || textField.text != renamingDrawing.title {
-            renameAlert.actions[1].isEnabled = false
+        print(renamingDrawing.title!)
+        print(textField.text!)
+        if textField.text! != "" {
+            renameAlert.actions[1].isEnabled = true
         }
     }
     
