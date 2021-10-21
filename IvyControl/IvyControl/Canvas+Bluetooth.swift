@@ -40,7 +40,7 @@ extension CanvasViewController: CBCentralManagerDelegate, CBPeripheralDelegate {
         auxWallPeripheral.delegate = self
         
         print("Peripheral Discovered: \(peripheral)")
-        print("Peripheral name: " + peripheral.name!)
+        print("Peripheral name: " + (peripheral.name ?? "No Name"))
         print ("Advertisement Data : \(advertisementData)")
         
         
@@ -139,7 +139,7 @@ extension CanvasViewController: CBCentralManagerDelegate, CBPeripheralDelegate {
             presentCompleteAlert()
         } else {
             print(error!)
-            presentErrorAlert()
+            presentErrorAlert()()
         }
     }
     
