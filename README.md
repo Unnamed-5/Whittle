@@ -1,5 +1,6 @@
-# Whittle
 # AuxWall
+## Team Whittle
+
 
 This repository contains the code of the app and the code for the arduino hardware.
 For more information, such as introduction and how to use, please visit our wiki:
