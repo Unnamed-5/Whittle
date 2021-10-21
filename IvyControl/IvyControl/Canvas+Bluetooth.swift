@@ -139,7 +139,7 @@ extension CanvasViewController: CBCentralManagerDelegate, CBPeripheralDelegate {
             presentCompleteAlert()
         } else {
             print(error!)
-            presentErrorAlert()()
+            presentErrorAlert()
         }
     }
     
